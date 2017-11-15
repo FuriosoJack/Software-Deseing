@@ -1,3 +1,10 @@
+
+import Estructura.Decision;
+import Estructura.Nodo;
+import Estructura.Probabilidad;
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * Copyright (C) 2017 Juan Diaz - Furiosojack <http://blog.furiosojack.com>
  *
@@ -22,5 +29,12 @@
 public class Main {
     public static void main(String[] args){
         
+        List<Nodo> list = new ArrayList<Nodo>();
+        
+        Probabilidad nueva = new Probabilidad();
+        Decision nueva2 = new Decision();
+        list.add(nueva2);
+        list.add(nueva);
+        System.out.println(list.get(0).getClass());
     }
 }
